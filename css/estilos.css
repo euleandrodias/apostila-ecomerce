@@ -2,3 +2,28 @@
     margin-right: auto;
     margin-left: auto;
 }
+.sacola {
+background-image: url(../img/sacola.png);
+background-repeat: no-repeat;
+background-position: top right;
+
+    font-size: 14px;
+    padding-right: 35px;  
+    text-align: right;
+    width: 140px 
+}
+
+.manu-opcoes ul {
+    font-size: 15px;
+}
+
+.menu-opcoes a {
+    color: #003366;
+}
+
+<body> :
+
+body {
+    color: #33333;
+    font-family: "Lucia Sans Unicode", "Lucida Grande", sans-serif;
+}
