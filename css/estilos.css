@@ -1,6 +1,6 @@
 .container {
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
+    width: 940px;
 }
 .sacola {
 background-image: url(../img/sacola.png);
@@ -10,20 +10,37 @@ background-position: top right;
     font-size: 14px;
     padding-right: 35px;  
     text-align: right;
-    width: 140px 
+    width: 140px;
+    padding-top: 8px; 
+}
+.sacola {
+    position: absolute;
+    top: 0;
+    right: 0;
+
 }
 
-.manu-opcoes ul {
+
+.menu-opcoes ul {
     font-size: 15px;
 }
-
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 20px;
+}
 .menu-opcoes a {
     color: #003366;
 }
-
-<body> :
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 body {
-    color: #33333;
+    color: #333333;
     font-family: "Lucia Sans Unicode", "Lucida Grande", sans-serif;
+}
+header {
+    position: relative;
 }
