@@ -208,3 +208,39 @@ footer .container {
 .menu-departamentos li li a::before {
  content: '- ';
 }
+.menu-departamentos li li a::before {
+    content: '\272A';
+    padding-right: 3px;
+}
+.painel h2:before {
+    content: '\2756';
+    padding-right: 5px;
+    opacity: 0.4;
+}
+ section , img {
+    border-radius: 15px;
+}
+/*  todas as bordas arredondadas com um raio de 15px */
+.a {
+border-radius: 5px;
+}
+
+/*borda superior esquerda e inferior direita com 5px
+borda superior direita e inferior esquerda com 2opx */
+.b {
+    border-radius: 5px 20px;
+}
+
+/* borda superior esquerda com 5px
+borda superior direita e inferior esquerda com 20px 
+borda inferior direita com 50px */
+.c {
+    border-radius: 5px 20px 50px;
+}
+/*borda superior esquerda com 5px
+borda superior direita com 20 px
+borda inferior direita com 50 px
+borda inferior esquerda com 100px */
+.d {
+    border-radius: 5px 20px 50px 100px;
+}
