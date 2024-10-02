@@ -157,7 +157,6 @@ header {
 }
 footer { 
     background-image: url(../img/fundo-rodape.png);
-    transform: translate(40px, -20px);
     
 }
 
@@ -178,6 +177,7 @@ footer {
 footer .container {
     position: relative;
 }
+
 .social {
     position: absolute;
     top: 12px;
@@ -219,6 +219,9 @@ footer .container {
 .menu-departamentos li li a::before {
     content: '\272A';
     padding-right: 3px;
+}
+#menu-departamentos {
+    transform: rotate(-10deg);
 }
 .painel h2:before {
     content: '\2756';
@@ -275,4 +278,23 @@ a {
     transform: translateY(-20px);
 }
 
-
+.painel li:hover {
+    background-color: rgba(255,255,255, 0.8);
+    box-shadow: 0 0 5px #333;
+    transition: 0.7s;
+}
+.painel li:hover {
+    transform: scale(1.2) rotate(-5deg);
+}
+.painel li:nth-child(2n):hover {
+    transform: scale(1.2) rotate(5deg);
+}
+.painel li {
+    transition: 0.7s;
+}
+.painel li:hover {
+    transition: 0.7s ease-in;
+}
+.painel li {
+    transition: 0.7s ease-out;
+}

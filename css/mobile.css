@@ -1,0 +1,20 @@
+
+@media print {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+@media screen {
+   body {
+    font-size: 16px;
+   } 
+}
+
+@media ( max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
+@
