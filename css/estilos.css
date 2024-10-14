@@ -43,7 +43,6 @@ body {
 }
 header {
     position: relative;
-    transform: translateX(50px);
 }
 .busca,
 .menu-departamentos {
@@ -256,15 +255,6 @@ borda inferior esquerda com 100px */
     border-radius: 5px 20px 50px 100px;
 }
 
-a {
-    opacity: 0.9;
-    color: white;
-    color: #FFFFFF;
-    color: rgb(255, 255, 255);
-    color: (255,255,255, 0.8);
-    background-color: rgba(0,0,0, 0.3);
-    color: white;
-}
 .gradiente {
     background: #cbebff;
     background: linear-gradient(45deg, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%);
