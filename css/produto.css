@@ -1,5 +1,5 @@
 .cores label::after {
-  content: "";
+  content: '';
   display: block;
 
   border: 6px solid rgba(0, 0, 0, 0.3);
@@ -36,6 +36,10 @@ label[for="azul"]::after {
 .cores input:not(:checked) + label img {
   display: none;
 }
+.cores {
+  position: relative;
+  padding-top: 90px;
+}
 
 .cores label::after {
   position: absolute;
@@ -43,10 +47,6 @@ label[for="azul"]::after {
   cursor: pointer;
 }
 
-.cores {
-  position: relative;
-  padding-top: 90px;
-}
 
 label[for="verde"]::after {
   left: 0;
@@ -90,7 +90,7 @@ label[for="azul"]::after {
 
 .produto legend {
   display: block;
-  font: bold0.9em/2.5 Arial;
+  font: bold 0.9em/2.5 Arial;
   text-transform: uppercase;
 }
 
@@ -113,7 +113,45 @@ label[for="azul"]::after {
 }
 
 @media (min-width: 600px) {
-  img {
+ .produto img {
     float: left;
   }
+
+  .produto {
+    position: relative;
+    padding-left: 40%;
+    font-size: 1.2em;
+    height: 100%;
+
+  }
+  .cores {
+    position: static;
+    padding: 0;
+  }
+  .cores legend {
+    position: static;
+  }
+
+  .cores label img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 35%;
+    max-height: 100%;
+  }
+
+  .cores label::after {
+    position: static;
+    float: left;
+    margin-right: 10px;
+  }
+
+  fieldset {
+    display: inline-block;
+    vertical-align: top;
+
+  
+  }
+
+
 }

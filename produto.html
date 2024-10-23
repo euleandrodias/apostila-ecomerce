@@ -8,14 +8,13 @@
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="stylesheet" href="css/produto.css"/>
-    
+    <link rel="stylesheet" href="css/mobile.css"/>
+    <link rel="stylesheet" href="css/produto.css" />
   </head>
   <body>
     <header class="container">
-      <h1>
-        <img src="img/logo.png" alt="Logo da Mirror Fashion" />
-      </h1>
+      <!-- Conteúdo do cabeçalho -->
+      <h1><img src="img/logo.png" alt="Logo da Mirror Fashion" /></h1>
 
       <p class="sacola">Nenhum item na sacola de compras</p>
 
@@ -29,35 +28,51 @@
         </ul>
       </nav>
     </header>
-    <div class="produto">
-      <h1>Fuzzy Cardigan</h1>
-      <p>por apenas R$ 129,90</p>
+    <div class="container">
+      <div class="produto">
+        <h1>Fuzzy Cardigan</h1>
+        <p>por apenas R$ 129,90</p>
 
-      <form>
-        <fieldset class="cores">
-          <legend>Escolha a cor</legend>
+        <form>
+          <fieldset class="cores">
+            <legend>Escolha a cor</legend>
+            <input type="radio" name="cor" value="verde" id="verde" checked />
+            <label for="verde">
+              <img
+                src="img/produtos/foto1-verde.png"
+                alt="produto na cor verde"
+              />
+            </label>
 
-          <input type="radio" name="cor" value="verde" id="verde" checked />
-          <label for="verde">
-            <img
-              src="img/produtos/foto1-verde.png"
-              alt="produto na cor verde"
-            />
-          </label>
+            <input type="radio" name="cor" value="rosa" id="rosa" checked />
+            <label for="rosa">
+              <img
+                src="img/produtos/foto1-rosa.png"
+                alt="Produto na cor rosa"
+              />
+            </label>
 
-          <input type="radio" name="cor" value="rosa" id="rosa" checked />
-          <label for="rosa">
-            <img src="img/produtos/foto1-rosa.png" alt="Produto na cor rosa" />
-          </label>
+            <input type="radio" name="cor" value="azul" id="azul" checked />
+            <label for="azul">
+              <img
+                src="img/produtos/foto1-azul.png"
+                alt="Produto na cor azul"
+              />
+            </label>
+            <fieldset class="tamanhos">
+              <legend>Escolha o tamanho</legend>
 
-          <input type="radio" name="cor" value="azul" id="azul" checked />
-          <label for="azul">
-            <img src="img/produtos/foto1-azul.png" alt="Produto na cor azul" />
-          </label>
-        </fieldset>
+              <input type="range"min="36" max="46" value="42" step="2" name="tamanho">
+          </fieldset>
 
-        <button class="comprar">Comprar</button>
-      </form>
+          <button class="comprar">Comprar</button>
+        </form>
+      </div>
+
+
+ <!--  -->
+
+ <table></table>
     </div>
     <footer>
       <div class="container">
