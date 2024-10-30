@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/estilos.css" />
-    <link rel="stylesheet" href="css/mobile.css"/>
+    <link rel="stylesheet" href="css/mobile.css" />
     <link rel="stylesheet" href="css/produto.css" />
   </head>
   <body>
@@ -30,54 +30,109 @@
     </header>
     <div class="container">
       <div class="produto">
-        <h1>Fuzzy Cardigan</h1>
-        <p>por apenas R$ 129,90</p>
-
-        <form>
-          <fieldset class="cores">
-            <legend>Escolha a cor</legend>
-            <input type="radio" name="cor" value="verde" id="verde" checked />
-            <label for="verde">
-              <img
-                src="img/produtos/foto1-verde.png"
-                alt="produto na cor verde"
-              />
-            </label>
-
-            <input type="radio" name="cor" value="rosa" id="rosa" checked />
-            <label for="rosa">
-              <img
-                src="img/produtos/foto1-rosa.png"
-                alt="Produto na cor rosa"
-              />
-            </label>
-
-            <input type="radio" name="cor" value="azul" id="azul" checked />
-            <label for="azul">
-              <img
-                src="img/produtos/foto1-azul.png"
-                alt="Produto na cor azul"
-              />
-            </label>
-            <fieldset class="tamanhos">
-              <legend>Escolha o tamanho</legend>
-
-              <input type="range"min="36" max="46" value="42" step="2" name="tamanho">
-          </fieldset>
-
-          <button class="comprar">Comprar</button>
-        </form>
+        <div class="detalhes">
+          <h2>Detalhes do produto</h2>
+          <p>
+            Esse é o melhor casaco de cardigã que você já viu. Exelente material
+            italiano com estampa desenhada pelos artesãos da comunidade de
+            krotor nas ilhas gregas. Compre já e receba hoje mesmo pela nossa
+            entrega a jato.
+          </p>
+        </div>
       </div>
+      <h1>Fuzzy Cardigan</h1>
+      <p>por apenas R$ 129,90</p>
 
+      <form>
+        <fieldset class="cores">
+          <legend>Escolha a cor</legend>
+          <input type="radio" name="cor" value="verde" id="verde" checked />
+          <label for="verde">
+            <img
+              src="img/produtos/foto1-verde.png"
+              alt="produto na cor verde"
+            />
+          </label>
 
- <!--  -->
+          <input type="radio" name="cor" value="rosa" id="rosa" checked />
+          <label for="rosa">
+            <img src="img/produtos/foto1-rosa.png" alt="Produto na cor rosa" />
+          </label>
 
- <table></table>
+          <input type="radio" name="cor" value="azul" id="azul" checked />
+          <label for="azul">
+            <img src="img/produtos/foto1-azul.png" alt="Produto na cor azul" />
+          </label>
+        </fieldset>
+        <fieldset class="tamanhos">
+          <legend>Escolha o tamanho</legend>
+
+          <input
+            type="range"
+            min="36"
+            max="46"
+            value="42"
+            step="2"
+            name="tamanho"
+            id="tamanho"
+          />
+        </fieldset>
+
+        <button class="comprar">Comprar</button>
+      </form>
+
+      <table>
+        <caption>
+          Quantidade e preço de camisetas.
+        </caption>
+
+        <colgroup>
+          <col width="10%" />
+          <col width="40%" />
+          <col width="30%" />
+          <col width="20%" />
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th rowspan="2"></th>
+            <th rowspan="2">Quantidade de Camisetas</th>
+            <th rowspan="2">Preço</th>
+          </tr>
+          <tr>
+            <th>Amarela</th>
+            <th>Vermelha</th>
+          </tr>
+        </thead>
+
+        <tfoot>
+          <tr>
+            <td></td>
+            <td>Total de camisetas amarelas: 35</td>
+            <td>Total de camisetas vermelas: 34</td>
+            <td>Valor todal: $45.00</td>
+          </tr>
+        </tfoot>
+
+        <tbody>
+          <tr>
+            <td>Polo</td>
+            <td>12</td>
+            <td>5</td>
+            <td>$30.00</td>
+          </tr>
+          <tr>
+            <td>Regata</td>
+            <td>23</td>
+            <td>29</td>
+            <td>$15.00</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <footer>
       <div class="container">
         <img src="img/logo-rodape.png" alt="Logo da Mirror Fashion" />
-
         <ul class="social">
           <li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
           <li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
