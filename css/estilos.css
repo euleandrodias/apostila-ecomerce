@@ -288,3 +288,11 @@ borda inferior esquerda com 100px */
 .painel li {
     transition: 0.7s ease-out;
 }
+.produto-back {
+    background-color: #f2f2f2;
+    margin-top: 1em;
+    border-top: 2px solid #ccc;
+}
+.cores label img {
+    border: 2px solid #ccc;
+}
